@@ -8,6 +8,7 @@ import { getSectors } from "../components/insertService";
 import { Axios } from "../api/api";
 import { Dropdown } from "primereact/dropdown";
 import { Link, useNavigate } from "react-router-dom";
+import { Button } from "primereact/button";
 
 const Create_Info = () => {
   const navigate = useNavigate();
@@ -105,12 +106,26 @@ const Create_Info = () => {
                 Accept terms & conditions
               </div>
             </div>
-            <button
+            {/* <button
               class="mt-5 w-full border p-2  from-green-800 bg-teal-700 text-white rounded-[4px] hover:bg-cyan-700 scale-105 duration-300"
               type="submit"
             >
               Save
-            </button>
+            </button> */}
+
+            <div className={`flex justify-between items-center`}>
+              <p className="px-3 text-gray-500"></p>
+              <div className="flex gap-2">
+                <Button
+                  type="submit"
+                  className={`p-mr-2 p-button-raised p-button-success`}
+                  label={"Save"}
+                  icon={"pi pi-save"}
+                  width={"full"}
+                  loading={loading}
+                />
+              </div>
+            </div>
           </form>
 
           <div class="mt-5 flex text-center text-sm text-gray-400">
