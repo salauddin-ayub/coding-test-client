@@ -77,7 +77,7 @@ export default function View_Info() {
 
       <div className="card shadow mt-5">
         <DataTable
-          paginator={false}
+          paginator={true}
           paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
           currentPageReportTemplate="Showing {first} to {last} of {totalRecords}"
           rows={10}
